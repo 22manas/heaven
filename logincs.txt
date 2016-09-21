@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
+namespace WebApplication8
+{
+    public partial class WebForm3 : System.Web.UI.Page
+    {
+        SqlConnection conn;
+        SqlCommand com;
+        SqlDataAdapter da;
+        DataSet ds;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+        public void filldataset()
+        {
+            string constr = ConfigurationManager.ConnectionStrings["myconn"].ConnectionString;
+            conn = new SqlConnection(constr);
+            com = new SqlCommand("validate2", conn);
+            com.CommandType = CommandType.StoredProcedure;
+            da = new SqlDataAdapter();
+            da.SelectCommand = com;
+            ds = new DataSet();
+            da.Fill(ds);
+
+        }
+
+        protected void btn_login_Click(object sender, EventArgs e)
+        {
+            filldataset();
+            int flag = 0;
+            foreach(DataRow dr in ds.Tables[0].Rows)
+            {
+                if(((string)dr[0] == (txtbxloginuserid.Text)) && ((string)dr[1] == txtbxloginpwd.Text))
+                {
+                    Response.Redirect("Booking.aspx");
+                    flag = 1;
+                    break;
+                }
+                
+
+            }
+            if (flag == 0)
+                Response.Write("Validation Invalid");
+        }
+    }
+}

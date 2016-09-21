@@ -1,0 +1,204 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
+namespace WebApplication8
+{
+    public partial class WebForm2 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_submit_Click(object sender, EventArgs e)
+        {
+            SqlConnection con;
+            SqlCommand cmd;
+            string constr = ConfigurationManager.ConnectionStrings["myconn"].ConnectionString;
+            con = new SqlConnection();
+            con.ConnectionString = constr;
+            con.Open();
+            cmd = new SqlCommand("insert_regtable", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@userid",txtbxuserid.Text);
+            cmd.Parameters.AddWithValue("@Password", txtbxpwd.Text);
+            int res = cmd.ExecuteNonQuery();
+            con.Close();
+            if(res>0)
+            {
+                Response.Write("Inserted Successfully");
+            }
+        }
+    }
+}
+
+=============================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
+
+namespace WebApplication8
+{
+    public partial class WebForm5 : System.Web.UI.Page
+    {
+        //string constr;
+        SqlConnection conn;
+        SqlCommand com;
+        SqlDataAdapter da;
+        DataSet ds;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_view_Click(object sender, EventArgs e)
+        {
+            string constr = ConfigurationManager.ConnectionStrings["myconn"].ConnectionString;
+            conn = new SqlConnection(constr);
+
+           // com = new SqlCommand("validate2", conn);
+            com = new SqlCommand("view_restables", conn);
+            com.CommandType = CommandType.StoredProcedure;
+
+            da = new SqlDataAdapter();
+            da.SelectCommand = com;
+            ds = new DataSet();
+            da.Fill(ds);
+            GridView1.DataSource = ds;
+            GridView1.DataBind();
+        }
+    }
+}
+
+================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
+namespace WebApplication8
+{
+    public partial class WebForm4 : System.Web.UI.Page
+    {
+        SqlConnection conn;
+        SqlCommand com;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if(!Page.IsPostBack)
+            {
+                populateFromLocation();
+                ddl_toloc.Items.Insert(0,"Select");
+
+            }
+        }
+
+        protected void ddl_fromloc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            populateToLocation();
+        }
+
+        private void populateFromLocation()
+        {
+            ddl_fromloc.Items.Clear();
+            ddl_fromloc.Items.Add("Chennai");
+            ddl_fromloc.Items.Add("Bangalore");
+            ddl_fromloc.Items.Add("Kanyakumari");
+            ddl_fromloc.Items.Add("Hyderabad");
+            ddl_fromloc.Items.Add("Madurai");
+            ddl_fromloc.Items.Insert(0, "Select");
+        }
+        private void populateToLocation()
+        {
+            ddl_toloc.Items.Clear();
+            if(ddl_fromloc.Text=="Chennai")
+            {
+                ddl_toloc.Items.Add("Bangalore");
+                ddl_toloc.Items.Add("Kanyakumari");
+                ddl_toloc.Items.Add("Hyderabad");
+                ddl_toloc.Items.Add("Madurai");
+            }
+            else if(ddl_fromloc.Text=="Bangalore")
+            {
+                ddl_toloc.Items.Add("Chennai");
+                ddl_toloc.Items.Add("Kanyakumari");
+                ddl_toloc.Items.Add("Hyderabad");
+                ddl_toloc.Items.Add("Madurai");
+            }
+            else if(ddl_fromloc.Text=="Kanyakumari")
+            {
+                ddl_toloc.Items.Add("Chennai");
+                ddl_toloc.Items.Add("Bangalore");
+                ddl_toloc.Items.Add("Hyderabad");
+                ddl_toloc.Items.Add("Madurai");
+            }
+            else if (ddl_fromloc.Text == "Hyderabad")
+            {
+                ddl_toloc.Items.Add("Chennai");
+                ddl_toloc.Items.Add("Bangalore");
+                ddl_toloc.Items.Add("Kanyakumari");
+                ddl_toloc.Items.Add("Madurai");
+            }
+            else if (ddl_fromloc.Text == "Madurai")
+            {
+                ddl_toloc.Items.Add("Chennai");
+                ddl_toloc.Items.Add("Bangalore");
+                ddl_toloc.Items.Add("Kanyakumari");
+                ddl_toloc.Items.Add("Hyderabad");
+            }
+           
+                ddl_toloc.Items.Insert(0, "Select");
+        }
+
+      
+
+        protected void btn_bookingsubmit_Click(object sender, EventArgs e)
+        {
+            string constr = ConfigurationManager.ConnectionStrings["myconn"].ConnectionString;
+            conn = new SqlConnection(constr);
+            conn.Open();
+            com = new SqlCommand("insert_restables", conn);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@fromloc", ddl_fromloc.Text);
+            com.Parameters.AddWithValue("@toloc", ddl_toloc.Text);
+            com.Parameters.AddWithValue("@nopassenger", int.Parse(txtbx_nopassenger.Text));
+            com.Parameters.AddWithValue("@date", DateTime.Parse(txtdate.Text));
+            com.Parameters.AddWithValue("@bustype", rbtn_bustype.Text);
+            int res = com.ExecuteNonQuery();
+            conn.Close();
+            if(res>0)
+            {
+                Response.Write("Insertion Successful");
+            }
+
+
+        }
+
+       
+
+        protected void clndrdate_SelectionChanged(object sender, EventArgs e)
+        {
+           txtdate.Text = clndrdate.SelectedDate.ToString();
+            
+        }
+    }
+}
+=======================================
