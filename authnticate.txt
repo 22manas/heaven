@@ -1,0 +1,66 @@
+<authentication mode="Forms"></authentication>
+==================================
+<configuration>
+    <system.web>
+        <authentication mode="Forms">
+            <forms name="TestAuthCookie" loginUrl="login.aspx" timeout="30">
+                <credentials passwordFormat="Clear">
+            <user name="user1" password="pass1"/>
+            <user name="user2" password="pass2"/>
+        </credentials>
+        </forms>
+    </authentication>
+    <authorization>
+        <deny users="?"/>
+    </authorization>
+    <compilation targetFramework="4.0"/>
+    <pages controlRenderingCompatibilityVersion="3.5" ClientIDMode="AutoID"/>
+    </system.web>
+</configuration>
+
+------------------------------------------------------------
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" %>
+<html>
+<head runat="server"><title>Sample</title><head>
+<body>
+    <form id="form1" runat="server">
+        Username: <asp:TextBox ID="txtUsername" runat="server" /><br>
+        Password:<asp:TextBox ID="txtPassword" runat="server" /><br>
+        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Login" /><br>
+        <asp:Label ID="lblStatus" runat="server" Text="Please login" />
+    </form>
+</body>
+</html>
+--------------------------------------------------------------------
+using System;
+using System.Web.UI.WebControls;
+using System.Web.Security;
+
+public partial class Default3 : System.Web.UI.Page
+{
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        if (FormsAuthentication.Authenticate(txtUsername.Text, txtPassword.Text))
+        {
+            lblStatus.Text = ("Welcome " + txtUsername.Text);
+            FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, true);
+        }
+        else
+        {
+            lblStatus.Text = "Invalid login!";
+        }
+
+    }
+}
+
+==============================================
+
+    </table>
+    <asp:Button ID="Submit1" OnClick="Logon_Click" Text="Log On" 
+       runat="server" />
+    <p>
+      <asp:Label ID="Msg" ForeColor="red" runat="server" />
+    </p>
+  </form>
+</body>
+</html>
