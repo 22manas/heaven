@@ -1,0 +1,653 @@
+Message-ID: <975233430.540412.1516469454338.JavaMail.confluence@atlassian-prod-confluence2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_540411_150622208.1516469454338"
+
+------=_Part_540411_150622208.1516469454338
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Kubernetes</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Kubernetes</h1>
+    <div class=3D"Section1">
+        <p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1516469454310 {padding: 0px;}
+div.rbtoc1516469454310 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1516469454310 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1516469454310">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-KubernetesApplicationScaffolding">Kubernetes App=
+lication Scaffolding</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-Requirements">Requirements</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#Kubernetes-Structure">Structure</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-/app">/app</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-Dockerfile">Dockerfile</a></li>=20
+<li><a href=3D"#Kubernetes-.dockerignore">.dockerignore</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#Kubernetes-/kubernetes">/kubernetes</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-deployment.yaml">deployment.yaml</a></li>=20
+<li><a href=3D"#Kubernetes-service.yaml">service.yaml</a></li>=20
+<li><a href=3D"#Kubernetes-ingress.yaml">ingress.yaml</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#Kubernetes-/helm/sampleapp">/helm/sampleapp</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-/templates">/templates</a></li>=20
+<li><a href=3D"#Kubernetes-values.yaml">values.yaml</a></li>=20
+<li><a href=3D"#Kubernetes-Chart.yaml">Chart.yaml</a></li>=20
+<li><a href=3D"#Kubernetes-autoscaler.yaml">autoscaler.yaml</a></li>=20
+</ul> </li>=20
+</ul> </li>=20
+<li><a href=3D"#Kubernetes-BuildandDeploy">Build and Deploy</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-Step1:DockerImageBuild">Step 1: Docker Image Bui=
+ld</a></li>=20
+<li><a href=3D"#Kubernetes-Step2:PushingtoaRegistry">Step 2: Pushing to a R=
+egistry</a></li>=20
+<li><a href=3D"#Kubernetes-Step3">Step 3</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-OptionA:DeployingusingHelm">Option A: Deploying =
+using Helm</a></li>=20
+<li><a href=3D"#Kubernetes-OptionB:DeployingusingConcourse">Option B: Deplo=
+ying using Concourse</a></li>=20
+</ul> </li>=20
+</ul> </li>=20
+<li><a href=3D"#Kubernetes-Metrics">Metrics</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-Prometeus">Prometeus</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#Kubernetes-Dashboard">Dashboard</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#Kubernetes-Grafana">Grafana</a></li>=20
+<li><a href=3D"#Kubernetes-SampleppURLs">Samplepp URLs</a></li>=20
+<li><a href=3D"#Kubernetes-Logging">Logging</a></li>=20
+<li><a href=3D"#Kubernetes-FAQ">FAQ</a></li>=20
+<li><a href=3D"#Kubernetes-Havingtrouble?">Having trouble?</a></li>=20
+<li><a href=3D"#Kubernetes-RelatedLinks:">Related Links:</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>
+<p><a class=3D"external-link" href=3D"https://kubernetes.io/docs/concepts/o=
+verview/what-is-kubernetes/" rel=3D"nofollow">Kubernetes</a>&nbsp;Is an ope=
+n-source system for automating deployment, scaling, and management of conta=
+inerized applications.</p>
+<p>It groups containers that make up an application into logical units for =
+easy management and discovery.</p>
+<p>The Platform Technologies team have built out and integrated several env=
+ironment based kubernetes clusters in the Azure cloud service.</p>
+<p>This information on this confluence page is here for reference and it ma=
+ybe slightly out of date so please ensure you have access to <em><strong>gi=
+thub to view the most up-to-date information</strong></em>:</p>
+<p><a class=3D"external-link" href=3D"https://github.com/DigitalInnovation/=
+kubernetes-deployment" rel=3D"nofollow">https://github.com/DigitalInnovatio=
+n/kubernetes-deployment</a></p>
+<p>For related provisioning information please go here to &nbsp;<a href=3D"=
+/display/PT/Provisioning">Provisioning</a></p>
+<h1 id=3D"Kubernetes-KubernetesApplicationScaffolding">Kubernetes Applicati=
+on Scaffolding</h1>
+<h2 id=3D"Kubernetes-Requirements"><a class=3D"external-link" href=3D"https=
+://github.com/DigitalInnovation/kubernetes-deployment#requirements" rel=3D"=
+nofollow">Requirements</a></h2>
+<p>In order to use the scaffolding, you'll need the following items install=
+ed and configured:</p>
+<ul>
+<li><a href=3D"/display/PT/Docker">Docker</a> /&nbsp;&nbsp;<a class=3D"exte=
+rnal-link" href=3D"https://docs.docker.com/engine/installation/" rel=3D"nof=
+ollow">Docker</a>: This is used to build your app into a Docker Image that =
+can be run locally or deployed into Kubernetes.&nbsp;</li>
+<li><a class=3D"external-link" href=3D"https://kubernetes.io/docs/user-guid=
+e/prereqs/" rel=3D"nofollow">Kubectl</a>: This is the Kubernetes command li=
+ne tool. It is used to deploy Kubernetes resources into the platform.</li>
+<li><a href=3D"/display/PT/MiniKube">MiniKube</a>&nbsp;/&nbsp;<a class=3D"e=
+xternal-link" href=3D"https://kubernetes.io/docs/getting-started-guides/min=
+ikube/" rel=3D"nofollow">MiniKube</a>&nbsp;&nbsp;Please note an alternative=
+ tool called <a class=3D"external-link" href=3D"https://kubernetes.io/docs/=
+getting-started-guides/minikube/" rel=3D"nofollow">minikube</a> is availabl=
+e to test a local Kuberenetes cluster with containers on desktops , so your=
+ team does not have to wait for access to a development cluster to proceed.=
+</li>
+<li><a class=3D"external-link" href=3D"https://github.com/kubernetes/helm" =
+rel=3D"nofollow">Helm</a>: This is a tool which allows you bundle your appl=
+ication and all of the Kubernetes resources it requires into a package, kno=
+w as a&nbsp;<em>Chart</em>. It's also used to manage deployments and releas=
+es.</li>
+<li>Cluster config: Kube config of the cluster you're deploying your app to=
+.</li>
+<li>Login credential to our Docker registry</li>
+</ul>
+<h1 id=3D"Kubernetes-Structure"><a class=3D"external-link" href=3D"https://=
+github.com/DigitalInnovation/kubernetes-deployment#structure" rel=3D"nofoll=
+ow">Structure</a></h1>
+<h2 id=3D"Kubernetes-/app"><a class=3D"external-link" href=3D"https://githu=
+b.com/DigitalInnovation/kubernetes-deployment#app" rel=3D"nofollow"><code>/=
+app</code></a></h2>
+<p>This is the root of our sample application. In this case it's a simple n=
+ode app, but this could be anything which can be built in a Docker containe=
+r.</p>
+<p>This folder is where the&nbsp;<code>Dockerfile</code>&nbsp;lives, and is=
+ referred to as the&nbsp;<em>Build Context</em>&nbsp;during the Docker buil=
+d process.</p>
+<h3 id=3D"Kubernetes-Dockerfile"><a class=3D"external-link" href=3D"https:/=
+/github.com/DigitalInnovation/kubernetes-deployment#dockerfile" rel=3D"nofo=
+llow"><code>Dockerfile</code></a></h3>
+<p>This is a text document that contains all the commands a user could call=
+ on the command line to assemble the application into a Docker Image. The f=
+ormat of this file is a list of:</p>
+<pre><code># comment
+INSTRUCTION arguments
+</code></pre>
+<p>A full list of the available commands can be found&nbsp;<a class=3D"exte=
+rnal-link" href=3D"https://docs.docker.com/engine/reference/builder/" rel=
+=3D"nofollow">here</a>, but a few of the most commonly used ones are listed=
+ below:</p>
+<ul>
+<li><code>FROM</code>: This sets the Base Image for the build. All subseque=
+nt commands are run on top of this image. When choosing a base image, it is=
+ advisable to pick one from the list of Docker verified ones, available on =
+the&nbsp;<a class=3D"external-link" href=3D"https://store.docker.com/search=
+?category=3Dbase&amp;source=3Dverified" rel=3D"nofollow">Docker Store</a>.<=
+/li>
+<li><code>RUN</code>: This runs the proceeding instruction in a shell.</li>
+<li><code>COPY</code>: This is used to add resources from the Docker Contex=
+t folder (the one where the Dockerfile is located) into the container.</li>
+<li><code>ENV</code>: Used to set environment variables in the image. Any v=
+ariables set here will also be set when you run the container.</li>
+<li><code>CMD</code>: This the command to run when the container is started=
+. In essence it is the executable to use when running the container. There =
+can only be one of these instructions in the Dockerfile.</li>
+</ul>
+<h3 id=3D"Kubernetes-.dockerignore"><a class=3D"external-link" href=3D"http=
+s://github.com/DigitalInnovation/kubernetes-deployment#dockerignore" rel=3D=
+"nofollow"><code>.dockerignore</code></a></h3>
+<p>Much like a&nbsp;<code>.gitignore</code>&nbsp;file, this tells Docker to=
+ ignore any files reference in the list. It makes sense to reference anythi=
+ng in your app folder that doesn't need to be in the resulting image in thi=
+s file.</p>
+<h2 id=3D"Kubernetes-/kubernetes"><a class=3D"external-link" href=3D"https:=
+//github.com/DigitalInnovation/kubernetes-deployment#kubernetes" rel=3D"nof=
+ollow"><code>/kubernetes</code></a></h2>
+<p>This folder contains the basic resources required to run the application=
+ in Kubernetes. These files can be deployed individually by running:</p>
+<pre><code>kubectl apply -f kubernetes/&lt;filename.yaml&gt;
+</code></pre>
+<p>or simulataneously by passing in the folder location:</p>
+<pre><code>kubectl apply -f kubernetes/
+</code></pre>
+<p><span>Important</span>&nbsp;Deploying apps using&nbsp;<code>kubectl</cod=
+e>&nbsp;is not the recommended approach at M&amp;S. This folder has been su=
+pplied for illustrative purposes only. The preferred approach is to bundle =
+them into a Helm chart.</p>
+<h3 id=3D"Kubernetes-deployment.yaml"><a class=3D"external-link" href=3D"ht=
+tps://github.com/DigitalInnovation/kubernetes-deployment#deploymentyaml" re=
+l=3D"nofollow"><code>deployment.yaml</code></a></h3>
+<p>This file contains the specification for the Kubernetes Pod, which in th=
+e simplest use case is equivalent to a container. It tells Kubernetes what =
+image to use, what to label it as, and how many copies there should be.</p>
+<p>You'll notice it doesn't specify where to run the container - Kubernetes=
+ decides which node it'll go during the deployment. The&nbsp;<code>affinity=
+</code>&nbsp;section in the file ensures kubernetes will alyways attempt to=
+ spread container copies across all available nodes. Without the&nbsp;<code=
+>affinity</code>&nbsp;configuration, kubernetes might deploy some or all co=
+pies of the container on a single node. If this node fails, there will be a=
+ brief outage while the container copies fail-over to another node. Spreadi=
+ng the containers across all available nodes helps prevent loss of service =
+in the face of node failure.</p>
+<h3 id=3D"Kubernetes-service.yaml"><a class=3D"external-link" href=3D"https=
+://github.com/DigitalInnovation/kubernetes-deployment#serviceyaml" rel=3D"n=
+ofollow"><code>service.yaml</code></a></h3>
+<p>As Pods can be running on any of the nodes, we don't have a fixed IP add=
+ress for them. Services can be used to provide a fixed Cluster IP and DNS n=
+ame, irrespective of the location of the underlying Pods.</p>
+<p>In this file we create a Cluster IP service which maps port 80 to the sa=
+me port on any Pod with the 'sampleapp' label.</p>
+<h3 id=3D"Kubernetes-ingress.yaml"><a class=3D"external-link" href=3D"https=
+://github.com/DigitalInnovation/kubernetes-deployment#ingressyaml" rel=3D"n=
+ofollow"><code>ingress.yaml</code></a></h3>
+<p>By default the service Cluster IPs is accessible from within the cluster=
+ only. If you want to expose it outside you need an Ingress rule.</p>
+<p>This file simply maps the host '<a class=3D"external-link" href=3D"http:=
+//sampleapp.k8s.mnsdigital.io" rel=3D"nofollow">sampleapp.k8s.mnsdigital.io=
+</a>' to port 80 on the Service with label 'sampleapp'.</p>
+<h2 id=3D"Kubernetes-/helm/sampleapp"><a class=3D"external-link" href=3D"ht=
+tps://github.com/DigitalInnovation/kubernetes-deployment#helmsampleapp" rel=
+=3D"nofollow"><code>/helm/sampleapp</code></a></h2>
+<p>Helm allows us to bundle the three Kubernetes resources into a package, =
+or&nbsp;<em>Chart</em>. We can then deploy all three components in a logica=
+l group called a&nbsp;<em>Release</em>. Helm also allows us to template the=
+&nbsp;<code>yaml</code>&nbsp;files for increased flexibility.</p>
+<h3 id=3D"Kubernetes-/templates"><a class=3D"external-link" href=3D"https:/=
+/github.com/DigitalInnovation/kubernetes-deployment#templates" rel=3D"nofol=
+low"><code>/templates</code></a></h3>
+<p>This folder contains the same three resources found in the&nbsp;<code>Ku=
+bernetes/</code>&nbsp;folder. The difference is that they contain template =
+syntax which is interpolated by Helm using the&nbsp;<code>values.yaml</code=
+>.</p>
+<h3 id=3D"Kubernetes-values.yaml"><a class=3D"external-link" href=3D"https:=
+//github.com/DigitalInnovation/kubernetes-deployment#valuesyaml" rel=3D"nof=
+ollow"><code>values.yaml</code></a></h3>
+<p>This is custom yaml file which is used to populate the files in the&nbsp=
+;<code>templates/</code>&nbsp;folder. Any values in here can be reference i=
+n the templates by prefixing with&nbsp;<code>.Values</code>.</p>
+<h3 id=3D"Kubernetes-Chart.yaml"><a class=3D"external-link" href=3D"https:/=
+/github.com/DigitalInnovation/kubernetes-deployment#chartyaml" rel=3D"nofol=
+low"><code>Chart.yaml</code></a></h3>
+<p>This provide metadata for the Chart. Attributes like name, version, desc=
+ription, maintainers etc. can be supplied here.</p>
+<p><span>Optional Config</span></p>
+<h3 id=3D"Kubernetes-autoscaler.yaml"><a class=3D"external-link" href=3D"ht=
+tps://github.com/DigitalInnovation/kubernetes-deployment#autoscaleryaml" re=
+l=3D"nofollow"><code>autoscaler.yaml</code></a></h3>
+<p>This can be used to dynmacially scale the number of copies of pods based=
+ on cpu usage. For example the following config:</p>
+<pre><code>replicas: 2
+replicasMax: 10
+cpuTargetPercentage: 50
+</code></pre>
+<p>In the above example when CPU utilization reaches 50% on average on 2 po=
+d copies, more copies are dynamically created to handle the load up to a ma=
+ximum of 10 copies. When load reduces, it will dynamically scale down the n=
+umber of copies appropiately.</p>
+<h1 id=3D"Kubernetes-BuildandDeploy"><a class=3D"external-link" href=3D"htt=
+ps://github.com/DigitalInnovation/kubernetes-deployment#build-and-deploy" r=
+el=3D"nofollow">Build and Deploy</a></h1>
+<h2 id=3D"Kubernetes-Step1:DockerImageBuild"><a class=3D"external-link" hre=
+f=3D"https://github.com/DigitalInnovation/kubernetes-deployment#step-1-dock=
+er-image-build" rel=3D"nofollow">Step 1: Docker Image Build</a></h2>
+<p>We can build the app Docker Image by running the following:</p>
+<pre><code>cd app
+docker build -t sampleapp:1.0.0 .
+</code></pre>
+<p>The&nbsp;<code>-t</code>&nbsp;here is used to tag the image with a meani=
+ngful name. The part before the ':' is the image name, and the part after i=
+s the tag. In this case the image is called&nbsp;<code>sampleapp</code>&nbs=
+p;and the tag is&nbsp;<code>1.0.0</code>.</p>
+<p>To run it and expose port 80 we can use:</p>
+<pre><code>docker run -d -p 80:5000 sampleapp:1.0.0
+</code></pre>
+<p>You should be able to confirm it's working as expected by navigating to&=
+nbsp;<code><a class=3D"external-link" href=3D"http://localhost" rel=3D"nofo=
+llow">http://localhost</a></code></p>
+<h2 id=3D"Kubernetes-Step2:PushingtoaRegistry"><a class=3D"external-link" h=
+ref=3D"https://github.com/DigitalInnovation/kubernetes-deployment#step-2-pu=
+shing-to-a-registry" rel=3D"nofollow">Step 2: Pushing to a Registry</a></h2=
+>
+<p>Docker images are best stored in a Docker Registry. To push the image to=
+ our Docker registry, you simply retag it with our registry as a prefix, an=
+d then push:</p>
+<pre><code>docker tag sampleapp:1.0.0 registry.pulp.devops.mnscorp.net/samp=
+leapp:1.0.0
+
+docker push registry.pulp.devops.mnscorp.net/sampleapp:1.0.0
+</code></pre>
+<p>At this point, anyone with access to the registry can pull the image usi=
+ng:</p>
+<pre><code>docker pull registry.pulp.devops.mnscorp.net/sampleapp:1.0.0
+</code></pre>
+<h2 id=3D"Kubernetes-Step3"><a class=3D"external-link" href=3D"https://gith=
+ub.com/DigitalInnovation/kubernetes-deployment#step-3" rel=3D"nofollow">Ste=
+p 3</a></h2>
+<p>At the time of writing (May 2017), there are two deployment options.</p>
+<h3 id=3D"Kubernetes-OptionA:DeployingusingHelm"><a class=3D"external-link"=
+ href=3D"https://github.com/DigitalInnovation/kubernetes-deployment#option-=
+a-deploying-using-helm" rel=3D"nofollow">Option A: Deploying using Helm</a>=
+</h3>
+<p>To deploy the app using Helm, simply run the following:</p>
+<pre><code>helm upgrade sampleapp --install ./helm/sampleapp --set dockerTa=
+g=3D1.0.0
+</code></pre>
+<p>If you want to see what Helm is going to deploy, before comitting to act=
+ually actioning it, you can supply the&nbsp;<code>--debug</code>and&nbsp;<c=
+ode>--dry-run</code>&nbsp;flags. This will print the interpolated templates=
+ to the terminal.</p>
+<pre><code>helm upgrade sampleapp --install ./helm/sampleapp --debug --dry-=
+run --set dockerTag=3D1.0.0
+</code></pre>
+<h3 id=3D"Kubernetes-OptionB:DeployingusingConcourse"><a class=3D"external-=
+link" href=3D"https://github.com/DigitalInnovation/kubernetes-deployment#op=
+tion-b-deploying-using-concourse" rel=3D"nofollow">Option B: Deploying usin=
+g Concourse</a></h3>
+<p>This is likely the&nbsp;<em>de facto</em>&nbsp;deployment method going f=
+orward. See&nbsp;<a class=3D"external-link" href=3D"https://github.com/Digi=
+talInnovation/kubernetes-deployment/tree/master/pipelines/concourse" rel=3D=
+"nofollow">here</a>&nbsp;for more information on how to deploy your app usi=
+ng Concourse.</p>
+<h1 id=3D"Kubernetes-Metrics"><a class=3D"external-link" href=3D"https://gi=
+thub.com/DigitalInnovation/kubernetes-deployment#metrics" rel=3D"nofollow">=
+Metrics</a></h1>
+<p>For collecting metris, we use Prometeus.</p>
+<h2 id=3D"Kubernetes-Prometeus"><a class=3D"external-link" href=3D"https://=
+github.com/DigitalInnovation/kubernetes-deployment#prometeus" rel=3D"nofoll=
+ow">Prometeus</a></h2>
+<p>This is a placeholder for Prometeus.</p>
+<h1 id=3D"Kubernetes-Dashboard"><a class=3D"external-link" href=3D"https://=
+github.com/DigitalInnovation/kubernetes-deployment#dashboard" rel=3D"nofoll=
+ow">Dashboard</a></h1>
+<p>For metrics visualisation, we use&nbsp;<a class=3D"external-link" href=
+=3D"https://grafana.com/" rel=3D"nofollow">Grafana</a></p>
+<h2 id=3D"Kubernetes-Grafana"><a class=3D"external-link" href=3D"https://gi=
+thub.com/DigitalInnovation/kubernetes-deployment#grafana" rel=3D"nofollow">=
+Grafana</a></h2>
+<p>Login to&nbsp;<a class=3D"external-link" href=3D"https://grafana.poc.pla=
+tform.mnscorp.net/" rel=3D"nofollow">https://grafana.poc.platform.mnscorp.n=
+et</a>&nbsp;to view the dashboard.</p>
+<pre><code>login : admin
+password : admin
+</code></pre>
+<p>For this sampleapp, we have created a Nodeapp dashboard. See below for t=
+he sampleapp URL endpoints.</p>
+<h2 id=3D"Kubernetes-SampleppURLs"><a class=3D"external-link" href=3D"https=
+://github.com/DigitalInnovation/kubernetes-deployment#samplepp-urls" rel=3D=
+"nofollow">Samplepp URLs</a></h2>
+<p>All the requests below will be reflected on the Grafana dashboad. For ex=
+ample, the number of requests on each URLs everytime when the page is refre=
+shed.</p>
+<ul>
+<li><a class=3D"external-link" href=3D"http://demo.poc.platform.mnscorp.net=
+/" rel=3D"nofollow">http://demo.poc.platform.mnscorp.net/</a>&nbsp;[200]</l=
+i>
+<li><a class=3D"external-link" href=3D"http://demo.poc.platform.mnscorp.net=
+/foo/hello" rel=3D"nofollow">http://demo.poc.platform.mnscorp.net/foo/hello=
+</a>&nbsp;[200]</li>
+<li><a class=3D"external-link" href=3D"http://demo.poc.platform.mnscorp.net=
+/bad/123" rel=3D"nofollow">http://demo.poc.platform.mnscorp.net/bad/123</a>=
+&nbsp;[error]</li>
+</ul>
+<h2 id=3D"Kubernetes-Logging"><a class=3D"external-link" href=3D"https://gi=
+thub.com/DigitalInnovation/kubernetes-deployment#logging" rel=3D"nofollow">=
+Logging</a></h2>
+<p>Logs are routed to Logentries using logspout. Login to Logentries with y=
+our credential, and select the target logset to start viewing logs. The log=
+set is named based on our Kubernetes cluster name.</p>
+<p>dev: platform-dev-k8s.<br>staging: platform-staging-k8s.<br>prod: platfo=
+rm-prod-k8s.<br>Log messages from each namespace are shipped to Logentries =
+as a log within the logset.</p>
+<p>Logentries support regex search. For example,&nbsp;<code>appname =3D /^s=
+ampleapp[a-zA-Z0-9\-]*/</code>&nbsp;will display log messages from sampleap=
+p pods.</p>
+<p>NOTE: We recommended all developers to log their application log in json=
+ format to stdout.</p>
+<h2 id=3D"Kubernetes-FAQ"><a class=3D"external-link" href=3D"https://github=
+.com/DigitalInnovation/kubernetes-deployment#faq" rel=3D"nofollow">FAQ</a><=
+/h2>
+<p>Q: Why logging in JSON format?&nbsp;<em>A: It provides a standardised fo=
+rmat for structuring data. JSON libraries are available for most languages =
+hence there is little overhead to parse logs. The structured data format ma=
+kes it possible to analyse the logs like big data. They are much easier to =
+read for both human and machine.</em></p>
+<p>Q: Are there any requirements on the field and data in the json log mess=
+ages?&nbsp;<em>A: No, not really. You will be the ultimate user, so log wha=
+tever you think is useful for you. We would recommend you to read&nbsp;<a c=
+lass=3D"external-link" href=3D"https://www.loggly.com/blog/8-handy-tips-con=
+sider-logging-json/" rel=3D"nofollow">this</a>&nbsp;for start.</em></p>
+<p>Q: Can I send logs directly from my application?&nbsp;<em>A: Yes you cou=
+ld, but we would not recommend it. We think apps should be built based on T=
+welve-factor principal. As long as your app writes its event stream to stdo=
+ut, they will be automatically shipped to Logentries. This way you will not=
+ risk losing any logs if your application crashes as all logs are collected=
+ on the node level outside of your application container.</em></p>
+<pre><code>A twelve-factor app never concerns itself with routing or storag=
+e of its output stream.
+It should not attempt to write to or manage logfiles. Instead, each running=
+ process writes
+its event stream, unbuffered, to `stdout`. During local development, the de=
+veloper will
+view this stream in the foreground of their terminal to observe the app's b=
+ehaviour.
+</code></pre>
+<h2 id=3D"Kubernetes-Havingtrouble?"><a class=3D"external-link" href=3D"htt=
+ps://github.com/DigitalInnovation/kubernetes-deployment#having-trouble" rel=
+=3D"nofollow">Having trouble?</a></h2>
+<p>If you run into some issues with your services on Kubernetes, read throu=
+gh this&nbsp;<a class=3D"external-link" href=3D"https://github.com/DigitalI=
+nnovation/kubernetes-deployment/blob/master/Troubleshooting.md" rel=3D"nofo=
+llow">Troubleshooting Guide</a>&nbsp;to see if you have run into a document=
+ed issue and it's solution.</p>
+<h2 id=3D"Kubernetes-RelatedLinks:">Related Links:</h2>
+<ul>
+<li>Monitoring - Grafana :&nbsp;<a class=3D"external-link" href=3D"https://=
+grafana.prod.platform.mnscorp.net/dashboard/db/kubernetes-cluster-overview?=
+refresh=3D10s&amp;orgId=3D1" rel=3D"nofollow">Cluster Overview</a></li>
+<li>Logging - Logentries : &nbsp;<a class=3D"external-link" href=3D"https:/=
+/logentries.com/app/fe479336#/set/7997762f" rel=3D"nofollow">Prod Log Set</=
+a></li>
+<li>Docker Registry - Nexus :&nbsp;<a class=3D"external-link" href=3D"https=
+://nexus.platform.mnscorp.net/" rel=3D"nofollow">Docker Registry</a></li>
+<li>CI - Jenkins :&nbsp;<a class=3D"external-link" href=3D"https://jenkins.=
+platform.mnscorp.net/" rel=3D"nofollow">Jenkins</a></li>
+</ul>
+<p>If you have any questions or run into any problems using the platform, p=
+lease do not hesitate to get in touch with us.</p>
+<p>#<a class=3D"external-link" href=3D"https://teams.microsoft.com/l/channe=
+l/19:fd171f39738e4d7b97b5bb6208b1829d@thread.skype/PaaS%20-%20Support%20and=
+%20Feedback" rel=3D"nofollow">PaaS =E2=80=93 Support and Feedback on MS Tea=
+ms</a></p>
+<p>#<a class=3D"external-link" href=3D"https://mands.slack.com/messages/C0P=
+M9KYQP" rel=3D"nofollow">PaaS =E2=80=93 Feedback on Slack</a></p>
+    </div>
+</body>
+</html>
+------=_Part_540411_150622208.1516469454338--
