@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+/*
+/^[A-Za-z]+$/ --only alphabetic
+/[0-9]/ -- only numeric
+/^[0-9]+$/ -- only numeric
+/^[a-zA-Z0-9_]*$/ -- alphanumeric
+*/
+const Alphabetically = 1;
+const Alphanumerically =2 ;
+var months = ['1','2','3','1jan','may34','March', 'Jan', 'Feb', 'Dec'];
+console.log('plain', months);
+var sortedmonts = sortedmonthsfunc(months,Alphanumerically);
+function sortedmonthsfunc(array,a){
+  var num = [];
+  var alpha = [];
+  var special = [];
+  switch(a){
+    case 1 :
+      for(var i = 0 ; i < array.length ; i++){
+       console.log(array[i]);}
+      return months.sort();
+    case 2 :
+      for(var i = 0 ; i < array.length ; i++){
+        //console.log(array[i]);
+        if(array[i].charAt(0).match(/[0-9]/)){
+          num.push(array[i]);
+        }else if(array[i].charAt(0).match(/[a-zA-Z]/)){
+                 alpha.push(array[i]);
+                 }else {
+                   special.push(array[i]);
+                 }
+      }
+  		var alpha_s = alpha.sort();
+      	console.log("alpha_s",alpha_s);
+  		var num_s = num.sort();
+      console.log("num_s",num_s);
+  		var special_s = special.sort();
+      console.log("special_s", special_s);
+      var response = alpha_s.concat(num_s);
+  		return response;
+    default :
+      return months;
+  }
+}
+console.log('sorted', sortedmonts);
+</script>
+
+</body>
+</html>
